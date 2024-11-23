@@ -1,6 +1,6 @@
 async function getImage(platformID) {
     try {
-        const response = await fetch(`http://api.beatkhana.com/api/getUserByBeatleader/${platformID}`);
+        const response = await fetch(`https://api.beatkhana.com/api/getUserByBeatleader/${platformID}`);
         if (!response.ok) {
             // new Error(`HTTP error! status: ${response.status}`);
         }
@@ -24,7 +24,7 @@ async function getImage(platformID) {
 
 async function getTwitchID(platformID)
 {
-    const response = await fetch(`http://api.beatkhana.com/api/getUserByBeatleader/${platformID}`);
+    const response = await fetch(`https://api.beatkhana.com/api/getUserByBeatleader/${platformID}`);
     if (!response.ok) {
         new Error(`HTTP error! status: ${response.status}`);
     }
